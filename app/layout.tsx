@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Neucha } from 'next/font/google'
-import '@/app/globals.css';
-
+import '@/app/[lang]/globals.css';
 const neucha = Neucha({ weight: '400', subsets: ['latin'] })
 
 export const metadata: Metadata = {
