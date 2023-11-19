@@ -1,17 +1,15 @@
 import React from 'react';
-import { useRouter } from 'next/router';
-import { useSession } from 'next-auth/react';
+import { auth } from '@/auth';
 
 type Props = {}
 
-const Page = (props: Props) => {
-  const { data: session } = useSession();
-  if(!session) {
-    Router.
-  }
+const Page = async (props: Props) => {
+  const session = await auth();
   return (
-    <div className=''>
-      Page
+    <div className='flex items-center justify-center w-full'>
+      <pre>
+        {JSON.stringify(session, null, 2)}
+      </pre>
     </div>
   )
 }
