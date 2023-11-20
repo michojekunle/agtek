@@ -1,3 +1,62 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 450px;
+    height: 800px;
+    border-radius: 0 0 350px 350px ;
+    transform: rotate(45deg) translate(-40%, -10%) ;
+    background-color: hsl(13, 100%, 96%);
+    z-index: -10;
+}
+
+@media screen and (max-width: 1200px) {
+    .hero-bg {
+        width: 400px;
+        height: 750px;
+        border-radius: 0 0 300px 300px ;
+        transform: rotate(45deg) translate(-34%, -10%) ;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .hero-bg {
+        width: 350px;
+        height:650px;
+        border-radius: 0 0 250px 250px ;
+        transform: rotate(45deg) translate(-30%, -10%) ;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero-bg {
+        width: 300px;
+        height: 650px;
+        border-radius: 0 0 300px 300px ;
+        transform: rotate(45deg) translate(-25%, -10%) ;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .hero-bg {
+        width: 250px;
+        height: 550px;
+        border-radius: 0 0 300px 300px ;
+        transform: rotate(45deg) translate(-20%, -10%) ;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .hero-bg {
+        width: 220px;
+        height: 400px;
+        border-radius: 0 0 300px 300px ;
+        transform: rotate(45deg) translate(-15%, -20%) ;
+    }
+}

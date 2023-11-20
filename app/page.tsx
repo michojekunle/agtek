@@ -7,7 +7,8 @@ import illustrationIntro from '@/public/assets/images/illustration-intro.svg';
 
 export default function Home() {
   return (
-    <main className="w-full">
+    <main className="w-screen relative overflow-hidden pb-11">
+      <div className='hero-bg' />
       <section className='w-full'>
         <Nav/>
         <div className='flex flex-col-reverse md:flex-row flex-wrap px-4 xs:px-11 md:px-16 lg:px-24 xl:px-32 mt-8 md:mt-16 gap-11 md:gap-7'>
