@@ -5,14 +5,23 @@ import { useSession } from 'next-auth/react';
 import Nav from '@/src/app/components/Nav';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import Loading from '../../components/Loading';
 
 
 
 type Props = {}
 
 const Page = (props: Props) => {
-  const { data: session } = useSession();
+  const { data: session, status } = useSession();
   const t = useTranslations('Index');
+
+  if(status === 'loading') {
+    return (
+      <div className='w-full h-screen py-10 flex flex-col items-center justify-center'>
+        <Loading />
+      </div>
+    )
+  }
 
   if(!session) {
     return (
@@ -24,6 +33,8 @@ const Page = (props: Props) => {
       </div>
     )
   }
+
+
   return (
     <div className='flex flex-col  w-full'>
       <Nav/>
