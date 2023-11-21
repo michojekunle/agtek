@@ -3,6 +3,9 @@ import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import Image from 'next/image';
 import illustrationIntro from '@/public/assets/images/illustration-intro.svg';
+import Carousel from 'react-elastic-carousel';
+import ReactElasticCarousel from 'react-elastic-carousel';
+import TestimonialsCarousel from '../components/TestimonialsCarousel';
 
 export default function Home() {
   return (
@@ -27,13 +30,11 @@ export default function Home() {
           </div>
         </div>
         <div className=''>
-          <div className=''>
-
-          </div>
+         <TestimonialsCarousel/>
         </div>
-        <div className='flex md:flex-row flex-col py-20  px-4 xs:px-11 md:px-16 lg:px-24 xl:px-32'>
-          <h2 className=''>Simplify how your team works today.</h2>
-          <button className='rounded-full border px-6 py-2 md:py-3 md:px-9 text-bright_red bg-white text-xs sm:text-sm md:text-md hover:opacity-75 border-none outline-none '>Get Started</button>
+        <div className='flex md:flex-row items-center justify-between flex-col py-20  px-4 xs:px-11 md:px-16 lg:px-24 xl:px-32 bg-bright_red'>
+          <h2 className='text-[40px] max-w-[520px] text-very_light_gray font-bold'>Simplify how your team works today.</h2>
+          <button className='rounded-full border px-6 py-3 md:py-4 md:px-9 text-bright_red font-bold bg-white text-xs sm:text-sm md:text-md hover:opacity-90 border-none outline-none '>Get Started</button>
         </div>
         <Footer/>
       </section>
