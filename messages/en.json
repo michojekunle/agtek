@@ -1,5 +1,6 @@
 {
     "Index": {
-      "title": "Hello world!"
+      "intro": "Hello World!",
+      "title": "User Session"
     }
   }

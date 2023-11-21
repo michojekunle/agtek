@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
-import { Neucha, Be_Vietnam_Pro } from 'next/font/google';
-import { SessionProvider } from 'next-auth/react';
+import { Be_Vietnam_Pro } from 'next/font/google';
 import '@/src/app/[locale]/globals.css';
 import Provider from '../components/Provider';
 const beVietnamPro = Be_Vietnam_Pro({ weight: '400', subsets: ['latin'] })

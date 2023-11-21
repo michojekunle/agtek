@@ -4,5 +4,5 @@ export type Session = {
         email?: string
         image: string
     }
-    expires: string
+    expires: Date
 }
