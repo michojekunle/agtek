@@ -2,12 +2,11 @@ import Link from 'next/link';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import Image from 'next/image';
-import bgDesktop from '@/public/assets/images/bg-simplify-section-desktop.svg';
 import illustrationIntro from '@/public/assets/images/illustration-intro.svg';
 
 export default function Home() {
   return (
-    <main className="w-screen relative overflow-hidden pb-11">
+    <main className="w- relative overflow-hidden">
       <div className='hero-bg' />
       <section className='w-full'>
         <Nav/>
@@ -27,8 +26,8 @@ export default function Home() {
             />
           </div>
         </div>
+        <Footer/>
       </section>
-      <Footer/>
     </main>
   )
 }
