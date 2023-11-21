@@ -31,7 +31,7 @@ const Nav =  (props: Props) => {
     }
 
   return (
-    <div className='bg-transparent px-5 xs:px-11 md:px-16 lg:px-24 xl:px-32 py-3 mt-4 md:mt-11 flex items-center justify-between w-full'>
+    <div className='bg-transparent px-4 xs:px-11 md:px-16 lg:px-24 xl:px-32 py-3 mt-4 md:mt-11 flex items-center justify-between w-full'>
         <Link href='/' className='flex items-center w-28 md:w-40'>
             <Image
                 src={logo}
@@ -47,7 +47,7 @@ const Nav =  (props: Props) => {
             <li className='cursor-pointer hover:text-dark_grayish_blue'>Community</li>
         </ul>
         {!session ? (
-            <Link href='/api/auth/signin' className='hidden md:block rounded-full border px-6 py-2 md:py-3 md:px-9 text-very_light_gray bg-bright_red text-xs sm:text-sm md:text-md hover:opacity-75 border-none outline-none shadow-xl shadow-very_pale_red'>Get Started</Link>
+            <Link href='/api/auth/signin' className='hidden md:block rounded-full border px-6 py-2 md:py-3 md:px-9 text-very_light_gray bg-bright_red text-xs sm:text-sm md:text-md hover:opacity-75 border-none outline-none shadow-md shadow-bright_red'>Get Started</Link>
         ) : (
             <div className='items-center gap-5 hidden md:flex'>
                 <Link href='/en/dashboard'>
@@ -82,7 +82,7 @@ const Nav =  (props: Props) => {
                     <li className='cursor-pointer hover:text-dark_grayish_blue'>Community</li>
                     <li>
                         {!session ? (
-                            <Link href='/api/auth/signin' className='rounded-full border px-6 py-2 md:py-3 md:px-9 text-very_light_gray bg-bright_red text-xs sm:text-sm md:text-md hover:opacity-75 border-none outline-none shadow-xl shadow-very_pale_red'>Get Started</Link>
+                            <Link href='/api/auth/signin' className='rounded-full border px-6 py-2 md:py-3 md:px-9 text-very_light_gray bg-bright_red text-xs sm:text-sm md:text-md hover:opacity-75 border-none outline-none shadow-md shadow-bright_red'>Get Started</Link>
                         ) : (
                             <div className='flex items-center gap-5'>
                                 <Link href='/en/dashboard'>
