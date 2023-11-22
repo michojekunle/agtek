@@ -57,7 +57,7 @@ export default function Home() {
           </div>
         </div>
         <div className='flex flex-col items-center py-16'>
-          <h3 className='text-4xl text-dark_blue font-extrabold '>{`What they've said`}</h3>
+          <h3 className='text-4xl text-center text-dark_blue font-extrabold '>{`What they've said`}</h3>
           <TestimonialsCarousel/>
           <Link href='/api/auth/signin' className='rounded-full border py-3 px-7 md:px-9 text-white font-medium bg-bright_red text-xs sm:text-sm md:text-md hover:opacity-75 shadow-lg shadow-bright_red/70 border-none outline-none'>Get Started</Link>
         </div>
