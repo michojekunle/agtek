@@ -50,7 +50,7 @@ const Page = (props: Props) => {
             <Link href='/es/dashboard' className='bg-bright_red font-medium text-white rounded-md transition hover:border hover:border-bright_red hover:bg-transparent hover:text-bright_red md:w-11 md:h-11 w-8 h-8 flex items-center justify-center'>es</Link>
           </div>
         </div>
-        <p className='w-full sele py-3 px-4 bg-bright_red/5 text-bright_red/40 cursor-not-allowed rounded-md'>Your session expires {new Date(session.expires).toLocaleString()}</p>
+        <p className='w-full select-none py-3 px-4 bg-bright_red/5 text-bright_red/40 cursor-not-allowed rounded-md'>Your session expires {new Date(session.expires).toLocaleString()}</p>
         <div>
           <p className='text-2xl mt-5'>{t('intro')}</p>
           <p className='text-xl mt-4'>{t('title')}</p>
