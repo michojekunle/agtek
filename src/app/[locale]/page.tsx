@@ -3,9 +3,7 @@ import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import Image from 'next/image';
 import illustrationIntro from '@/public/assets/images/illustration-intro.svg';
-import Carousel from 'react-elastic-carousel';
-import ReactElasticCarousel from 'react-elastic-carousel';
-import TestimonialsCarousel from '../components/TestimonialsCarousel';
+import TestimonialsCarousel from '../components/TestimonialsCarousel.jsx';
 
 export default function Home() {
   return (
@@ -29,8 +27,37 @@ export default function Home() {
             />
           </div>
         </div>
+        <div className='flex md:flex-row flex-col gap-20 items-center md:items-start px-4 xs:px-11 md:px-16 lg:px-24 xl:px-32 py-16'>
+          <div className='flex flex-col items-center md:items-start w-full max-w-xs md:w-2/4 '>
+            <h2 className='text-center md:text-left leading-relaxedw-full text-4xl text-dark_blue font-extrabold'>{`What's different about Manage?`}</h2>
+            <p className='text-center md:text-left mt-5 text-dark_grayish_blue w-full leading-loose'>Manage provides all the functionality your team needs without the complexity. Our software is tailor-made for modern digital product teams.</p>
+          </div>
+          <div className='flex flex-col gap-11 items-start'>
+            <div className="">
+              <div className='flex items-center gap-4 bg-very_pale_red md:gap-6 rounded-full'>
+                <button className='outline-none bg-bright_red py-2 text-md px-7 rounded-full text-white '>01</button>
+                <p className='text-md md:text-lg font-bold text-dark_blue'>Track company-wide progress</p>
+              </div>
+              <p className='mt-3 leading-loose md:ml-24 text-dark_grayish_blue'>See how your day-to-day task fit into the wider vision. go from tracking progress at the milestone level all the way down to the to the smallest details. Never lose sight of the bigger picture again.</p>
+            </div>
+            <div className="">
+              <div className='flex items-center gap-4 bg-very_pale_red md:gap-6 rounded-full'>
+                <button className='outline-none bg-bright_red py-2 text-md px-7 rounded-full text-white '>01</button>
+                <p className='text-md md:text-lg font-bold text-dark_blue'>Track company-wide progress</p>
+              </div>
+              <p className='mt-3 leading-loose md:ml-24 text-dark_grayish_blue'>See how your day-to-day task fit into the wider vision. go from tracking progress at the milestone level all the way down to the to the smallest details. Never lose sight of the bigger picture again.</p>
+            </div>
+            <div className="">
+              <div className='flex items-center gap-4 bg-very_pale_red md:gap-6 rounded-full'>
+                <button className='outline-none bg-bright_red py-2 text-md px-7 rounded-full text-white '>01</button>
+                <p className='text-md md:text-lg font-bold text-dark_blue'>Track company-wide progress</p>
+              </div>
+              <p className='mt-3 leading-loose md:ml-24 text-dark_grayish_blue'>See how your day-to-day task fit into the wider vision. go from tracking progress at the milestone level all the way down to the to the smallest details. Never lose sight of the bigger picture again.</p>
+            </div>
+          </div>
+        </div>
         <div className='flex flex-col items-center py-16'>
-          <h3 className='text-3xl md:text-4xl text-dark_blue font-extrabold '>{`What they've said`}</h3>
+          <h3 className='text-4xl text-dark_blue font-extrabold '>{`What they've said`}</h3>
           <TestimonialsCarousel/>
           <Link href='/api/auth/signin' className='rounded-full border py-3 px-7 md:px-9 text-white font-medium bg-bright_red text-xs sm:text-sm md:text-md hover:opacity-75 shadow-lg shadow-bright_red/70 border-none outline-none'>Get Started</Link>
         </div>

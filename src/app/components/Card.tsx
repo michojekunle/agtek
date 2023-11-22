@@ -9,7 +9,7 @@ type Props = {
 
 function Card({ name, testimonial, avatar }: Props) {
   return (
-    <div className='bg-very_light_gray rounded shadow pt-16 p-11 relative my-11 w-full max-w-xl flex items-center flex-col mx-6 text-center'>
+    <div className='bg-very_light_gray rounded shadow pt-16 p-11 relative my-11 w-full max-w-xl flex items-center flex-col mx-4 md:mx-6 text-center'>
         <div className='absolute -top-10 left-2/4 -translate-x-2/4'>
             <Image
                 src={avatar}
