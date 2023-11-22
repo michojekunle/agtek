@@ -35,22 +35,22 @@ export default function Home() {
           <div className='flex flex-col gap-14 items-start md:w-2/4'>
             <div className="">
               <div className='flex items-center gap-4 bg-very_pale_red md:bg-transparent md:gap-6 rounded-full'>
-                <button className='outline-none bg-bright_red py-2 text-md px-7 rounded-full text-white '>01</button>
-                <p className='text-md md:text-lg font-bold text-dark_blue'>Track company-wide progress</p>
+                <button className='outline-none bg-bright_red py-2 text-xs xs:text-md px-7 rounded-full text-white '>01</button>
+                <p className='text-xs xs:text-md md:text-lg font-bold text-dark_blue py-2 px-4'>Track company-wide progress</p>
               </div>
               <p className='mt-3 leading-loose md:ml-24 text-dark_grayish_blue'>See how your day-to-day task fit into the wider vision. go from tracking progress at the milestone level all the way down to the to the smallest details. Never lose sight of the bigger picture again.</p>
             </div>
             <div className="">
               <div className='flex items-center gap-4 bg-very_pale_red md:bg-transparent md:gap-6 rounded-full'>
-                <button className='outline-none bg-bright_red py-2 text-md px-7 rounded-full text-white '>02</button>
-                <p className='text-md md:text-lg font-bold text-dark_blue'>Track company-wide progress</p>
+                <button className='outline-none bg-bright_red py-2 text-xs xs:text-md px-7 rounded-full text-white '>02</button>
+                <p className='text-xs xs:text-md md:text-lg font-bold text-dark_blue py-2 px-4'>Track company-wide progress</p>
               </div>
               <p className='mt-3 leading-loose md:ml-24 text-dark_grayish_blue'>See how your day-to-day task fit into the wider vision. go from tracking progress at the milestone level all the way down to the to the smallest details. Never lose sight of the bigger picture again.</p>
             </div>
             <div className="">
               <div className='flex items-center gap-4 bg-very_pale_red md:bg-transparent md:gap-6 rounded-full'>
-                <button className='outline-none bg-bright_red py-2 text-md px-7 rounded-full text-white '>03</button>
-                <p className='text-md md:text-lg font-bold text-dark_blue'>Track company-wide progress</p>
+                <button className='outline-none bg-bright_red py-2 text-xs xs:text-md px-7 rounded-full text-white '>03</button>
+                <p className='text-xs xs:text-md md:text-lg font-bold text-dark_blue py-2 px-4'>Track company-wide progress</p>
               </div>
               <p className='mt-3 leading-loose md:ml-24 text-dark_grayish_blue'>See how your day-to-day task fit into the wider vision. go from tracking progress at the milestone level all the way down to the to the smallest details. Never lose sight of the bigger picture again.</p>
             </div>
@@ -62,7 +62,7 @@ export default function Home() {
           <Link href='/api/auth/signin' className='rounded-full border py-3 px-7 md:px-9 text-white font-medium bg-bright_red text-xs sm:text-sm md:text-md hover:opacity-75 shadow-lg shadow-bright_red/70 border-none outline-none'>Get Started</Link>
         </div>
         <div className='flex md:flex-row items-center justify-between flex-col py-20  px-4 xs:px-11 md:px-16 lg:px-24 xl:px-32 bg-bright_red gap-11'>
-            <h2 className='text-[40px] md:text-left text-center max-w-[520px] text-very_light_gray font-bold'>Simplify how your team works today.</h2>
+            <h2 className='text-3xl md:text-[40px] md:text-left text-center max-w-[520px] text-very_light_gray font-bold'>Simplify how your team works today.</h2>
             <Link href='/api/auth/signin' className='rounded-full border px-6 py-3 md:py-4 md:px-9 text-bright_red font-bold bg-white text-xs sm:text-sm md:text-md hover:opacity-90 border-none outline-none'>Get Started</Link>
         </div>
         <Footer/>

@@ -39,18 +39,18 @@ const Page = (props: Props) => {
     <div className='flex flex-col  w-full'>
       <Nav/>
       <div className='px-4 xs:px-11 md:px-16 lg:px-24 xl:px-32 mt-8'>
-        <div className='flex items-center gap-3 justify-between mb-5'>
+        <div className='flex items-center flex-wrap-reverse gap-3 justify-between mb-5'>
           <div className=''>
-            <h2 className='text-bright_red text-lg'>{session.user?.name}</h2>
+            <h2 className='text-bright_red text-lg capitalize'>{session.user?.name}</h2>
             <p className='text-dark_grayish_blue text-xs md:text-sm'>{session.user?.email}</p>
           </div>
           <div className='flex items-center gap-3'>
-            <Link href="/en/dashboard" className='bg-bright_red font-medium text-white rounded-md transition border hover:border-bright_red hover:bg-transparent hover:text-bright_red w-11 h-11 flex items-center justify-center'>en</Link>
-            <Link href='/fr/dashboard' className='bg-bright_red font-medium text-white rounded-md transition border hover:border-bright_red hover:bg-transparent hover:text-bright_red w-11 h-11 flex items-center justify-center'>fr</Link>
-            <Link href='/es/dashboard' className='bg-bright_red font-medium text-white rounded-md transition border hover:border-bright_red hover:bg-transparent hover:text-bright_red w-11 h-11 flex items-center justify-center'>es</Link>
+            <Link href="/en/dashboard" className='bg-bright_red font-medium text-white rounded-md transition hover:border hover:border-bright_red hover:bg-transparent hover:text-bright_red md:w-11 md:h-11 w-8 h-8 flex items-center justify-center'>en</Link>
+            <Link href='/fr/dashboard' className='bg-bright_red font-medium text-white rounded-md transition hover:border hover:border-bright_red hover:bg-transparent hover:text-bright_red md:w-11 md:h-11 w-8 h-8 flex items-center justify-center'>fr</Link>
+            <Link href='/es/dashboard' className='bg-bright_red font-medium text-white rounded-md transition hover:border hover:border-bright_red hover:bg-transparent hover:text-bright_red md:w-11 md:h-11 w-8 h-8 flex items-center justify-center'>es</Link>
           </div>
         </div>
-        <p className='w-ful py-3 px-4 bg-bright_red/5 text-bright_red/40 cursor-not-allowed rounded-md'>Your session expires {new Date(session.expires).toLocaleString()}</p>
+        <p className='w-full sele py-3 px-4 bg-bright_red/5 text-bright_red/40 cursor-not-allowed rounded-md'>Your session expires {new Date(session.expires).toLocaleString()}</p>
         <div>
           <p className='text-2xl mt-5'>{t('intro')}</p>
           <p className='text-xl mt-4'>{t('title')}</p>
