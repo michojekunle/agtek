@@ -5,7 +5,7 @@ import Card from './Card';
 
 type Props = {}
 
-function myArrow({ type, onClick, isEdge }) {
+function myArrow() {
     return <span></span>
   }
 
