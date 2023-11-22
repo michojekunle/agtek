@@ -27,29 +27,29 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className='flex md:flex-row flex-col gap-20 items-center md:items-start px-4 xs:px-11 md:px-16 lg:px-24 xl:px-32 py-16'>
-          <div className='flex flex-col items-center md:items-start w-full max-w-xs md:w-2/4 '>
-            <h2 className='text-center md:text-left leading-relaxedw-full text-4xl text-dark_blue font-extrabold'>{`What's different about Manage?`}</h2>
-            <p className='text-center md:text-left mt-5 text-dark_grayish_blue w-full leading-loose'>Manage provides all the functionality your team needs without the complexity. Our software is tailor-made for modern digital product teams.</p>
+        <div className='flex md:flex-row flex-col gap-20 items-center md:items-start justify-between px-4 xs:px-11 md:px-16 lg:px-24 xl:px-32 py-16 w-full'>
+          <div className='flex flex-col items-center md:items-start w-full max-w-xs md:max-w-lg md:w-2/4 '>
+            <h2 className='text-center md:text-left leading-snug w-full text-4xl text-dark_blue font-extrabold'>{`What's different about Manage?`}</h2>
+            <p className='text-center md:text-left mt-5 text-dark_grayish_blue w-full md:w-8/12 leading-relaxed'>Manage provides all the functionality your team needs without the complexity. Our software is tailor-made for modern digital product teams.</p>
           </div>
-          <div className='flex flex-col gap-11 items-start'>
+          <div className='flex flex-col gap-14 items-start md:w-2/4'>
             <div className="">
-              <div className='flex items-center gap-4 bg-very_pale_red md:gap-6 rounded-full'>
+              <div className='flex items-center gap-4 bg-very_pale_red md:bg-transparent md:gap-6 rounded-full'>
                 <button className='outline-none bg-bright_red py-2 text-md px-7 rounded-full text-white '>01</button>
                 <p className='text-md md:text-lg font-bold text-dark_blue'>Track company-wide progress</p>
               </div>
               <p className='mt-3 leading-loose md:ml-24 text-dark_grayish_blue'>See how your day-to-day task fit into the wider vision. go from tracking progress at the milestone level all the way down to the to the smallest details. Never lose sight of the bigger picture again.</p>
             </div>
             <div className="">
-              <div className='flex items-center gap-4 bg-very_pale_red md:gap-6 rounded-full'>
-                <button className='outline-none bg-bright_red py-2 text-md px-7 rounded-full text-white '>01</button>
+              <div className='flex items-center gap-4 bg-very_pale_red md:bg-transparent md:gap-6 rounded-full'>
+                <button className='outline-none bg-bright_red py-2 text-md px-7 rounded-full text-white '>02</button>
                 <p className='text-md md:text-lg font-bold text-dark_blue'>Track company-wide progress</p>
               </div>
               <p className='mt-3 leading-loose md:ml-24 text-dark_grayish_blue'>See how your day-to-day task fit into the wider vision. go from tracking progress at the milestone level all the way down to the to the smallest details. Never lose sight of the bigger picture again.</p>
             </div>
             <div className="">
-              <div className='flex items-center gap-4 bg-very_pale_red md:gap-6 rounded-full'>
-                <button className='outline-none bg-bright_red py-2 text-md px-7 rounded-full text-white '>01</button>
+              <div className='flex items-center gap-4 bg-very_pale_red md:bg-transparent md:gap-6 rounded-full'>
+                <button className='outline-none bg-bright_red py-2 text-md px-7 rounded-full text-white '>03</button>
                 <p className='text-md md:text-lg font-bold text-dark_blue'>Track company-wide progress</p>
               </div>
               <p className='mt-3 leading-loose md:ml-24 text-dark_grayish_blue'>See how your day-to-day task fit into the wider vision. go from tracking progress at the milestone level all the way down to the to the smallest details. Never lose sight of the bigger picture again.</p>
