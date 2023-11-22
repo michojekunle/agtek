@@ -19,7 +19,7 @@ export default function Home() {
             <p className='text-dark_grayish_blue my-7 md:my-9 text-center md:text-left w-4/5 leading-relaxed'>
               Manage makes it simple for software teams to plan day to day taskswhile keeping the larger team goals in view.
             </p>
-            <Link href='/api/auth/signin' className='rounded-full border px-7 py-3 md:px-9 text-very_light_gray bg-bright_red text-sm md:text-md hover:opacity-75 border-none outline-none shadow-xl shadow-very_pale_red'>Get Started</Link>
+            <Link href='/api/auth/signin' className='rounded-full border px-7 py-3 md:px-9 text-very_light_gray bg-bright_red text-sm md:text-md hover:opacity-75 border-none outline-none shadow-lg shadow-bright_red/70'>Get Started</Link>
           </div>
           <div className='flex-1 flex items-center justify-center md:justify-end'>
             <Image
@@ -29,12 +29,14 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className=''>
-         <TestimonialsCarousel/>
+        <div className='flex flex-col items-center py-16'>
+          <h3 className='text-3xl md:text-4xl text-dark_blue font-extrabold '>{`What they've said`}</h3>
+          <TestimonialsCarousel/>
+          <Link href='/api/auth/signin' className='rounded-full border py-3 px-7 md:px-9 text-white font-medium bg-bright_red text-xs sm:text-sm md:text-md hover:opacity-75 shadow-lg shadow-bright_red/70 border-none outline-none'>Get Started</Link>
         </div>
-        <div className='flex md:flex-row items-center justify-between flex-col py-20  px-4 xs:px-11 md:px-16 lg:px-24 xl:px-32 bg-bright_red'>
-          <h2 className='text-[40px] max-w-[520px] text-very_light_gray font-bold'>Simplify how your team works today.</h2>
-          <button className='rounded-full border px-6 py-3 md:py-4 md:px-9 text-bright_red font-bold bg-white text-xs sm:text-sm md:text-md hover:opacity-90 border-none outline-none '>Get Started</button>
+        <div className='flex md:flex-row items-center justify-between flex-col py-20  px-4 xs:px-11 md:px-16 lg:px-24 xl:px-32 bg-bright_red gap-11'>
+            <h2 className='text-[40px] md:text-left text-center max-w-[520px] text-very_light_gray font-bold'>Simplify how your team works today.</h2>
+            <Link href='/api/auth/signin' className='rounded-full border px-6 py-3 md:py-4 md:px-9 text-bright_red font-bold bg-white text-xs sm:text-sm md:text-md hover:opacity-90 border-none outline-none'>Get Started</Link>
         </div>
         <Footer/>
       </section>
