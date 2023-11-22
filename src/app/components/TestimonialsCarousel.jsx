@@ -3,13 +3,11 @@
 import Carousel from 'react-elastic-carousel';
 import Card from './Card';
 
-type Props = {}
-
 function myArrow() {
     return <span></span>
   }
 
-function TestimonialsCarousel({}: Props) {
+function TestimonialsCarousel() {
     const breakPoints = [
         { width: 1, itemsToShow: 1 },
         { width: 550, itemsToShow: 2 },
