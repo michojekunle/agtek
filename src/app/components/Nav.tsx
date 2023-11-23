@@ -6,17 +6,8 @@ import Image from 'next/image';
 import logo from '@/public/assets/images/logo.svg';
 import { IoClose, IoMenu } from "react-icons/io5";
 import { useSession } from 'next-auth/react';
-import { DefaultSession } from 'next-auth';
-
 
 type Props = {}
-
-type DataSession = {
-    data: {
-        session?: DefaultSession
-    },
-    status: "loading" | "authenticated" | "unauthenticated"
-}
 
 const Nav =  (props: Props) => {
     const { data: session, status }  = useSession();
