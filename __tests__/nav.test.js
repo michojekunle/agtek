@@ -3,13 +3,11 @@ import Nav from '../src/app/components/Nav';
 import '@testing-library/jest-dom'
 
 describe('Nav', () => {
-  it('renders a heading', () => {
+  it('renders a listitem', () => {
     render(<Nav />)
 
-    const heading = screen.getByRole('heading', {
-      name: /welcome to next\.js!/i,
-    })
+    const listitem = screen.getByRole('listitem');
 
-    expect(heading).toBeInTheDocument()
+    expect(listitem).toBeInTheDocument()
   })
 })
